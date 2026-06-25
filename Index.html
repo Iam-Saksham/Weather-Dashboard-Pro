@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Dashboard Pro</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+
+            🌦️ Weather Dashboard Pro
+
+        </div>
+
+        <button
+            id="darkModeBtn">
+
+            🌙 Dark Mode
+
+        </button>
+
+    </header>
+
+    <main>
+
+        <!-- SEARCH -->
+
+        <section class="search-section">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter City Name">
+
+            <button
+                id="searchBtn">
+
+                Search
+
+            </button>
+
+            <button
+                id="locationBtn">
+
+                📍 My Location
+
+            </button>
+
+        </section>
+
+        <!-- LOADING -->
+
+        <section
+            id="loading"
+            class="hidden">
+
+            <div class="loader"></div>
+
+            <p>Fetching Weather...</p>
+
+        </section>
+
+        <!-- ERROR -->
+
+        <section
+            id="errorBox"
+            class="hidden">
+
+            <p>
+                City not found.
+            </p>
+
+        </section>
+
+        <!-- CURRENT WEATHER -->
+
+        <section
+            id="weatherCard">
+
+            <div class="weather-header">
+
+                <div>
+
+                    <h1 id="cityName">
+
+                        Search a City
+
+                    </h1>
+
+                    <p id="country">
+
+                        --
+
+                    </p>
+
+                </div>
+
+                <img
+                    id="weatherIcon"
+                    src=""
+                    alt="Weather Icon">
+
+            </div>
+
+            <h2 id="temperature">
+
+                -- °C
+
+            </h2>
+
+            <h3 id="condition">
+
+                --
+
+            </h3>
+
+            <p id="dateTime">
+
+                --
+
+            </p>
+
+        </section>
+
+        <!-- WEATHER STATS -->
+
+        <section
+            class="stats-grid">
+
+            <div class="card">
+
+                <h3>
+
+                    Feels Like
+
+                </h3>
+
+                <p id="feelsLike">
+
+                    --
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Humidity
+
+                </h3>
+
+                <p id="humidity">
+
+                    --
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Wind Speed
+
+                </h3>
+
+                <p id="wind">
+
+                    --
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Pressure
+
+                </h3>
+
+                <p id="pressure">
+
+                    --
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Visibility
+
+                </h3>
+
+                <p id="visibility">
+
+                    --
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    UV Index
+
+                </h3>
+
+                <p id="uv">
+
+                    --
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Sunrise
+
+                </h3>
+
+                <p id="sunrise">
+
+                    --
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Sunset
+
+                </h3>
+
+                <p id="sunset">
+
+                    --
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- WEATHER HIGHLIGHTS -->
+
+        <section
+            class="highlight-section">
+
+            <h2>
+
+                Weather Highlights
+
+            </h2>
+
+            <div
+                id="highlights">
+
+                Waiting for search...
+
+            </div>
+
+        </section>
+
+        <!-- FORECAST -->
+
+        <section>
+
+            <h2>
+
+                5-Day Forecast
+
+            </h2>
+
+            <div
+                id="forecastContainer"
+                class="forecast-grid">
+
+            </div>
+
+        </section>
+
+        <!-- RECENT SEARCHES -->
+
+        <section>
+
+            <h2>
+
+                Recent Searches
+
+            </h2>
+
+            <ul
+                id="historyList">
+
+            </ul>
+
+        </section>
+
+        <!-- QUICK ACTIONS -->
+
+        <section
+            class="button-group">
+
+            <button
+                id="copyBtn">
+
+                📋 Copy Report
+
+            </button>
+
+            <button
+                id="downloadBtn">
+
+                ⬇ Download Report
+
+            </button>
+
+            <button
+                id="shareBtn">
+
+                📤 Share
+
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+
+            Weather Dashboard Pro • Version 1.0
+
+        </p>
+
+        <p>
+
+            Built with HTML, CSS & JavaScript
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
